@@ -31,7 +31,6 @@ public class Controls {
 
     public void playControls(){
         this.updateInputs();
-        //TODO play all map controls
         for(String input: inputs) {
             if(this.controls.containsKey(input)){
                 try{
