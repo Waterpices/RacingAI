@@ -36,7 +36,7 @@ public class Controls {
                 try{
                     this.controls.get(input).run();
                 }
-                catch (NullPointerException){
+                catch (NullPointerException e){
                     System.err.println("The control bind on" + input + " is not defined (was likely not properly define or deleted)");
                 }
             }
