@@ -1,13 +1,15 @@
+import CarInputControls.InputMethod;
+
 import java.util.HashMap;
 import java.util.HashSet;
 
 public class Controls {
-    private HashSet<String> inputs;
-    private HashMap<String,InputMethod> controls;
+    private final HashSet<String> inputs;
+    private final HashMap<String, InputMethod> controls;
 
     public Controls(){
         this.inputs = new HashSet<String>();
-        this.controls = new HashMap<String,InputMethod>();
+        this.controls = new HashMap<String, InputMethod>();
     }
     /**
      * Sets a new control for a key pressed.
@@ -29,6 +31,10 @@ public class Controls {
         //TODO update input set
     }
 
+    public void simulateKeyPress(String key){
+        this.inputs.add(key);
+    }
+
     public void playControls(){
         this.updateInputs();
         for(String input: inputs) {
@@ -41,5 +47,6 @@ public class Controls {
                 }
             }
         }
+        this.inputs.clear();
     }
 }
