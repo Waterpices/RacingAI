@@ -1,5 +1,6 @@
 import CarInputControls.*;
 import processing.core.PApplet;
+import processing.event.KeyEvent;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -26,6 +27,7 @@ public class Game extends PApplet {
         controls.addControl("z", new Accelerate(car1));
         controls.addControl("s", new Brake(car1));
         car1.forceMove(0,200,0);
+        controls.simulateKeyPress("z");
 
         Car car2 = new Car(20,40, new Color(225, 0, 150));
         addCar(car2);
@@ -41,7 +43,6 @@ public class Game extends PApplet {
         drawBackground();
         fill(255,0,0);
         rect(50, 50, 100, 100);
-        //updateControl
         //playControl -> play collision inside each object
         controls.playControls();
         //update object position
@@ -50,13 +51,6 @@ public class Game extends PApplet {
         }
         //update display
         i++;
-        if(i<40){
-            controls.simulateKeyPress("z");
-            controls.simulateKeyPress("t");
-        }
-        if(i>40){
-            controls.simulateKeyPress("d");
-        }
         for(Car c:cars){
             drawItem(c);
         }
@@ -69,6 +63,16 @@ public class Game extends PApplet {
             System.out.println(c);
         }
         System.out.println("End of draw");
+    }
+
+    @Override
+    public void keyPressed(KeyEvent event) {
+        this.controls.keyPressed(event);
+    }
+
+    @Override
+    public void keyReleased(KeyEvent event) {
+        this.controls.keyReleased(event);
     }
 
     private void drawItem(Car c){

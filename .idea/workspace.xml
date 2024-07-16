@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23eb24ba-ee00-4f23-93dd-e1d324ea620d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CarInputControls/Accelerate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CarInputControls/Brake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CarInputControls/TurnLeft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CarInputControls/TurnRight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Drawer.java" afterDir="false" />
+    <list default="true" id="23eb24ba-ee00-4f23-93dd-e1d324ea620d" name="Changes" comment="Package InputControl added.&#10;Fix drawSquareCenter in Game class. (rotate/translate order matters)&#10;All input methods added to Controls.&#10;Car :&#10;-friction add&#10;-color added&#10;-switch from double to float for convenience.&#10;Maybe switch display to Drawer ?">
+      <change afterPath="$PROJECT_DIR$/src/KeyManipulation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarInputControls/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controls.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InputMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarInputControls/InputMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TurnRight.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -85,7 +77,8 @@
       <workItem from="1720734805968" duration="9062000" />
       <workItem from="1720815806320" duration="2283000" />
       <workItem from="1720915979452" duration="7258000" />
-      <workItem from="1720976754818" duration="20497000" />
+      <workItem from="1720976754818" duration="20863000" />
+      <workItem from="1721163658739" duration="6192000" />
     </task>
     <task id="LOCAL-00001" summary="Added game foundation, controls and control mapping infrastructure">
       <option name="closed" value="true" />
@@ -119,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720923921377</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Package InputControl added.&#10;Fix drawSquareCenter in Game class. (rotate/translate order matters)&#10;All input methods added to Controls.&#10;Car :&#10;-friction add&#10;-color added&#10;-switch from double to float for convenience.&#10;Maybe switch display to Drawer ?">
+      <option name="closed" value="true" />
+      <created>1721002719790</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721002719790</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +142,7 @@
     <MESSAGE value="Remove a done TODO" />
     <MESSAGE value="Fix catching error: unspecified error object." />
     <MESSAGE value="workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <MESSAGE value="Package InputControl added.&#10;Fix drawSquareCenter in Game class. (rotate/translate order matters)&#10;All input methods added to Controls.&#10;Car :&#10;-friction add&#10;-color added&#10;-switch from double to float for convenience.&#10;Maybe switch display to Drawer ?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Package InputControl added.&#10;Fix drawSquareCenter in Game class. (rotate/translate order matters)&#10;All input methods added to Controls.&#10;Car :&#10;-friction add&#10;-color added&#10;-switch from double to float for convenience.&#10;Maybe switch display to Drawer ?" />
   </component>
 </project>
