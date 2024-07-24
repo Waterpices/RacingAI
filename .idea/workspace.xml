@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23eb24ba-ee00-4f23-93dd-e1d324ea620d" name="Changes" comment="Package InputControl added.&#10;Fix drawSquareCenter in Game class. (rotate/translate order matters)&#10;All input methods added to Controls.&#10;Car :&#10;-friction add&#10;-color added&#10;-switch from double to float for convenience.&#10;Maybe switch display to Drawer ?">
-      <change afterPath="$PROJECT_DIR$/src/KeyManipulation.java" afterDir="false" />
+    <list default="true" id="23eb24ba-ee00-4f23-93dd-e1d324ea620d" name="Changes" comment="Add functionnal Controls">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarInputControls/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarInputControls/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +77,8 @@
       <workItem from="1720815806320" duration="2283000" />
       <workItem from="1720915979452" duration="7258000" />
       <workItem from="1720976754818" duration="20863000" />
-      <workItem from="1721163658739" duration="6192000" />
+      <workItem from="1721163658739" duration="6985000" />
+      <workItem from="1721776002362" duration="4931000" />
     </task>
     <task id="LOCAL-00001" summary="Added game foundation, controls and control mapping infrastructure">
       <option name="closed" value="true" />
@@ -120,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721002719790</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add functionnal Controls">
+      <option name="closed" value="true" />
+      <created>1721170687593</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721170687593</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +151,7 @@
     <MESSAGE value="Fix catching error: unspecified error object." />
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Package InputControl added.&#10;Fix drawSquareCenter in Game class. (rotate/translate order matters)&#10;All input methods added to Controls.&#10;Car :&#10;-friction add&#10;-color added&#10;-switch from double to float for convenience.&#10;Maybe switch display to Drawer ?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Package InputControl added.&#10;Fix drawSquareCenter in Game class. (rotate/translate order matters)&#10;All input methods added to Controls.&#10;Car :&#10;-friction add&#10;-color added&#10;-switch from double to float for convenience.&#10;Maybe switch display to Drawer ?" />
+    <MESSAGE value="Add functionnal Controls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add functionnal Controls" />
   </component>
 </project>

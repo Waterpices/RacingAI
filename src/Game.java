@@ -45,15 +45,15 @@ public class Game extends PApplet {
         rect(50, 50, 100, 100);
         //playControl -> play collision inside each object
         controls.playControls();
+        for(Car c:cars){
+            drawItem(c);
+        }
         //update object position
         for(Car c:cars){
             c.move();
         }
         //update display
         i++;
-        for(Car c:cars){
-            drawItem(c);
-        }
         try {
             TimeUnit.MILLISECONDS.sleep(20);
         } catch (InterruptedException e) {
@@ -77,6 +77,24 @@ public class Game extends PApplet {
 
     private void drawItem(Car c){
         drawSquareCenter(c.getX(), c.getY(), c.getWidth(), c.getHeight(), c.getOrientation(),c.getColor());
+        drawArrow(c.getDebugSpeedArrow(),new Color(0,0,255));
+        drawArrow(c.getDebugSteeringArrow(),new Color(255,0,255));
+    }
+
+    private void drawArrow(ArrayList<Float> arrow, Color c){
+        strokeWeight(2);
+        stroke(c.getRed(),c.getGreen(),c.getBlue());
+        pushMatrix();
+        translate(arrow.get(0), arrow.get(1));
+        rotate(arrow.get(3));
+        line(0,0,arrow.get(2), 0);
+        line(arrow.get(2), 0, arrow.get(2) - 8, -8);
+        line(arrow.get(2), 0, arrow.get(2) - 8, 8);
+        rotate(-arrow.get(3));
+        translate(-arrow.get(0), -arrow.get(1));
+        popMatrix();
+        stroke(0,0,0);
+        strokeWeight(1);
     }
 
     public void addCar(Car c){
